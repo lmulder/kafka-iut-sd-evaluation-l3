@@ -1,0 +1,28 @@
+{
+  "name": "eurynome-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "tasks.max": "1",
+    "database.hostname": "eurynome-db",
+    "database.port": "3306",
+    "database.user": "eurynomeuser",
+    "database.password": "eurynomepw",
+    "database.server.id": "184054",
+    "topic.prefix": "eurynome",
+    "database.include.list": "eurynome",
+    "schema.history.internal.kafka.bootstrap.servers": "my-kafka.loic-mulder-dev.svc.cluster.local:9092",
+    "schema.history.internal.kafka.topic": "schema-changes.inventory",
+    "schema.history.internal.consumer.security.protocol": "SASL_PLAINTEXT",
+    "schema.history.internal.consumer.sasl.mechanism": "PLAIN",
+    "schema.history.internal.consumer.sasl.jaas.config": "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"user1\" password=\"qcMZXxcgi7\";",
+    "schema.history.internal.producer.security.protocol": "SASL_PLAINTEXT",
+    "schema.history.internal.producer.sasl.mechanism": "PLAIN",
+    "schema.history.internal.producer.sasl.jaas.config": "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"user1\" password=\"qcMZXxcgi7\";",
+    "producer.security.protocol": "SASL_PLAINTEXT",
+    "producer.sasl.mechanism": "PLAIN",
+    "producer.sasl.jaas.config": "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"user1\" password=\"qcMZXxcgi7\";",
+    "consumer.security.protocol": "SASL_PLAINTEXT",
+    "consumer.sasl.mechanism": "PLAIN",
+    "consumer.sasl.jaas.config": "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"user1\" password=\"qcMZXxcgi7\";"
+  }
+}
